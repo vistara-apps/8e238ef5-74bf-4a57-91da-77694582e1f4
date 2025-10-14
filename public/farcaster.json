@@ -1,0 +1,16 @@
+{
+  "frame": {
+    "name": "VetTechX-rayGuide",
+    "homeUrl": "https://vet-xray-guide.baseapp/home",
+    "iconUrl": "https://vet-xray-guide.baseapp/icon.png",
+    "version": "next",
+    "webhookUrl": "https://vet-xray-guide.baseapp/api/farcaster-webhook",
+    "splashImageUrl": "https://vet-xray-guide.baseapp/splash.png",
+    "splashBackgroundColor": "#0A0A0A"
+  },
+  "accountAssociation": {
+    "header": "Connect your Farcaster identity to VetTech X-ray Guide for personalized content and professional recognition.",
+    "payload": "Payload detailing domain and user FID for secure account linking.",
+    "signature": "Cryptographic signature verifying user identity and app association."
+  }
+}

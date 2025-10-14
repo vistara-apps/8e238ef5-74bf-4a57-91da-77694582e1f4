@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Coinbase Theme - Dark Navy */
+  --color-bg: #0a1929;
+  --color-fg: #e3f2fd;
+  --color-accent: #0052ff;
+  --color-primary: #1976d2;
+  --color-surface: #1a2332;
+  --color-base-light: #2196f3;
+  
+  /* Design Tokens */
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+  
+  --spacing-lg: 24px;
+  --spacing-md: 16px;
+  --spacing-sm: 10px;
+}
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  
+  body {
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface bg-opacity-80 backdrop-blur-sm border border-gray-700 rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-fg px-6 py-3 rounded-lg font-medium hover:bg-opacity-80 transition-all duration-200 border border-gray-700;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 hover:bg-opacity-90 transition-all duration-200;
+  }
+  
+  .nav-link {
+    @apply text-fg hover:text-accent transition-colors duration-200 flex items-center gap-2;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent bg-opacity-20 text-accent border border-accent border-opacity-30;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-base-light bg-clip-text text-transparent;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+}

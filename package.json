@@ -1,0 +1,39 @@
+{
+  "name": "vettech-xray-guide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^0.38.19",
+    "@farcaster/miniapp-sdk": "0.1.10",
+    "@react-three/drei": "^9.92.0",
+    "@react-three/fiber": "^8.15.0",
+    "@tanstack/react-query": "^5",
+    "@upstash/redis": "^1.34.4",
+    "autoprefixer": "^10.4.0",
+    "lucide-react": "^0.462.0",
+    "next": "^15.3.3",
+    "pino-pretty": "^10.3.1",
+    "postcss": "^8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.1",
+    "three": "^0.160.0",
+    "viem": "^2.27.2",
+    "wagmi": "^2.14.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.160.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.3.3",
+    "typescript": "^5"
+  }
+}
